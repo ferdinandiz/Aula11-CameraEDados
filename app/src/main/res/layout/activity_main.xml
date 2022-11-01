@@ -65,11 +65,12 @@
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
         android:layout_marginTop="5dp"
+        android:weightSum="4"
 
         >
         <ImageButton
             android:id="@+id/btnSalvar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:scaleType="fitCenter"
@@ -78,7 +79,7 @@
             />
         <ImageButton
             android:id="@+id/btnCarregar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:scaleType="fitCenter"
@@ -86,7 +87,7 @@
             android:layout_marginRight="5dp" />
         <ImageButton
             android:id="@+id/btnCamera"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:scaleType="fitCenter"
@@ -94,7 +95,7 @@
             android:layout_marginRight="5dp" />
         <ImageButton
             android:id="@+id/btnEnviar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:scaleType="fitCenter"

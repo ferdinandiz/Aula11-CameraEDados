@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp">
+        <EditText
+            android:id="@+id/txtsuperior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto Superior"/>
+        <EditText
+            android:id="@+id/txtinferior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto Inferior"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inserir Texto"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <SeekBar
+                    android:id="@+id/seekBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:max="100"
+                    android:progress="40"/>
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="40"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+
+        >
+        <ImageButton
+            android:id="@+id/btnSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save"
+            android:layout_marginRight="5dp"
+            />
+        <ImageButton
+            android:id="@+id/btnCarregar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/load2"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera"
+            android:layout_marginRight="5dp" />
+        <ImageButton
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear2"
+        android:layout_below="@id/linear1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:scaleType="fitXY"
+            android:src="@drawable/noimage"/>
+        <TextView
+            android:id="@+id/txt01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/txt02"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checkPermission()) {
                     View relCenter = findViewById(R.id.relativeCenter);
                     Bitmap bitmap = screenShot(relCenter);
-                    arqImagem = "CameraTeste_" + System.currentTimeMillis() + ".png";
+                    arqImagem = "Aula11_" + System.currentTimeMillis() + ".png";
                     armazenar(bitmap, arqImagem);
                     btnEnviar.setEnabled(true);
                     btnSalvar.setEnabled(false);
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void armazenar(Bitmap bitmap, String arquivo) {
-        String diretorio = Environment.getExternalStorageDirectory().getAbsolutePath() + "/CameraTeste";
+        String diretorio = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Aula11";
         File dir = new File(diretorio);
         if (!dir.exists()) {
             if (dir.mkdir()) {
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void enviar() {
-        String diretorio = Environment.getExternalStorageDirectory().getAbsolutePath() + "/CameraTeste/" + arqImagem;
+        String diretorio = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Aula11/" + arqImagem;
         File f = new File(diretorio);
         ContentValues values = new ContentValues(2);
         values.put(MediaStore.Images.Media.MIME_TYPE, "image/png");
